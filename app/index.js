@@ -1,9 +1,10 @@
 import 'whatwg-fetch';
+
 import Vue from 'vue';
-import App from '.app';
+import App from './components/app.vue';
 
 // create a new Vue instance of the 'App' component
-new Vue({
-  ...App,
-  el: '.app',
-});
+
+const app = new Vue(App);
+
+app.$mount('.app');
